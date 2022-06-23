@@ -1,3 +1,5 @@
+import data from '../data.json';
+
 function createElement(type: keyof HTMLElementTagNameMap, options = {}) {
   const element = document.createElement(type);
   Object.entries(options).forEach(([key, value]) => {
@@ -28,11 +30,7 @@ interface chartObj {
   height?: string;
 }
 
-fetch('./data.json')
-  .then((Response) => Response.json())
-  .then((data) => {
-    generateChartObj(data);
-  });
+generateChartObj(data);
 
 function generateChartObj(inputData: chartObj[]) {
   let maxValueObj = getMaxObj(inputData);
