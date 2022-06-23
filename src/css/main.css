@@ -124,7 +124,7 @@ picture {
 hr {
   border-width: 0.05em;
   border-style: solid;
-  border-color: var(--clr-cream);
+  border-color: hsl(var(--clr-cream));
   border-radius: 1vw;
 }
 
