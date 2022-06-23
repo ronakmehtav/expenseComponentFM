@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a Frontend Mentor Challenge Page for expenses chart component"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main class="flow flow--small">
+      <section class="infoCard flex" name="info header">
+        <h1 class="visually-hidden">My balance is $921.48.</h1>
+        <div aria-hidden="true">
+          <div class="text__subdued">My balance</div>
+          <div class="largeText"><strong>$921.48</strong></div>
+        </div>
+        <a href="#" title="Logo Link">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+        </a>
+      </section>
+      <section class="flow chart-dashboard" name="chart dashboard">
+        <h2>Spending - Last 7 days</h2>
+        <div class="chart__collection flex"></div>
+        <p class="visually-hidden">
+          Total this month $478.33 which is +2.4% from last month.
+        </p>
+        <hr />
+        <div aria-hidden="true" class="flex">
+          <div>
+            <div class="text__subdued textColor-light">Total this month</div>
+            <h3 class="largeText"><strong>$478.33</strong></h3>
+          </div>
+          <div class="align-right">
+            <h3><strong>+2.4%</strong></h3>
+            <div class="text__subdued textColor-light">from last month</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./src/main.ts"></script>
+  </body>
+</html>
